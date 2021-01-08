@@ -25,3 +25,11 @@ yarn dev
 可以从编辑首页 `src/pages/index.tsx` 开始，保存后会自动更新。
 
 可以访问 http://localhost:3000/api/hello ，它属于 [API routes](https://nextjs.org/docs/api-routes/introduction) ，可以在 `pages/api/hello.js` 中编辑。
+
+### 启动storybook
+
+```bash
+yarn storybook
+```
+
+然后打开在浏览器打开 `http://localhost:6006` 访问 `storybook` 演示地址。
