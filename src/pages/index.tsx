@@ -6,8 +6,10 @@ import { Alert, message } from 'antd';
 import { useQuery } from 'react-query';
 
 import { Box } from '@/styles/common';
-import { CharacterCounter } from '@/components/home';
+import CharacterCounter from '@/components/home/CharacterCounter';
 import { getReactQuery, getInfo } from '@/services/home';
+import BarItem from '@/components/layout/BarItem';
+import ProductOptimCard from '@/components/towone/ProductOptim/ProductOptimCard';
 
 const Container = styled.section`
   padding: 4em;
@@ -66,6 +68,12 @@ export default function Home() {
         <Tip message='您已成功登陆~' />
 
         <CharacterCounter />
+
+        <BarItem active>知识库</BarItem>
+
+        <ProductOptimCard
+          data={{ isMustDo: false, isFinish: false, title: '单品标题优化' }}
+        />
       </Container>
     </div>
   );
